@@ -27,8 +27,6 @@ pianoKeys.forEach((pianoKey, i) => {
     '22',
     '24',
   ]
-  // const number = i < 9 ? `0${i + 1}` : i + 1
-  // const newUrl = `keys-audio/key${number}.mp3`
   const newUrl = `keys-audio/key${reMap[i]}.mp3`
   pianoKey.addEventListener('click', () => playSound(newUrl))
 })
